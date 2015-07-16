@@ -11,8 +11,10 @@ namespace WorldData
     {
         public App()
         {
+            //TODO switch back to HomePage when done with styling IG controls in TestPage
             // The root page of your application
-            var navPage = new NavigationPage(new HomePage());
+            var navPage = new NavigationPage(new TestPage());
+            //var navPage = new NavigationPage(new HomePage());
             navPage.BarTextColor = Theme.PrimaryColor;
             MainPage = navPage;
         }

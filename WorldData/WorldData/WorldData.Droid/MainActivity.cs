@@ -18,6 +18,13 @@ namespace WorldData.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            // ensure Infragistics assemblies are deployed 
+            Infragistics.XF.Initializers.Barcodes.Init();
+            Infragistics.XF.Initializers.Charts.Init();
+            Infragistics.XF.Initializers.Gauges.Init();
+            Infragistics.XF.Initializers.Grids.Init();
+
             LoadApplication(new App());
 
             if ((int)Android.OS.Build.VERSION.SdkInt >= 21) { ActionBar.SetIcon ( new ColorDrawable (Resources.GetColor (Android.Resource.Color.Transparent))); } 

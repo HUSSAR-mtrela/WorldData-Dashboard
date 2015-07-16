@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ig="clr-namespace:Infragistics.XF.Controls;assembly=InfragisticsXF.Controls.Charts"
+             xmlns:igc="clr-namespace:Infragistics.XF;assembly=InfragisticsXF"
+             xmlns:local="clr-namespace:WorldData;assembly=WorldData"
+             x:Class="WorldData.Views.TestPage"
+             Title="World Population">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:BoolToColorConverter x:Key="BoolToColorConverter"/>
+      <!-- Slice fills/brushes collection should contain as many brushes as data points or 
+      the colors will  start repeating in the pie chart. -->
+      <igc:BrushCollection x:Key="SliceBrushes">
+          <igc:SolidColorBrush Color="Maroon" />
+          <igc:SolidColorBrush Color="Red" />
+          <igc:SolidColorBrush Color="Olive" /> 
+          <igc:SolidColorBrush Color="Yellow" />
+          <igc:SolidColorBrush Color="Green" />
+          <igc:SolidColorBrush Color="Lime" />
+          <igc:SolidColorBrush Color="Aqua" />
+          <igc:SolidColorBrush Color="Blue" />
+          <igc:SolidColorBrush Color="Purple" />
+          <igc:SolidColorBrush Color="Fuchsia" />
+      </igc:BrushCollection>
+      <!-- Slice outlines/boarder collection should match brushes or contain just one brush -->
+      <igc:BrushCollection x:Key="SliceOutlines">
+        <igc:SolidColorBrush Color="Maroon" />
+        <igc:SolidColorBrush Color="Red" />
+        <igc:SolidColorBrush Color="Olive" /> 
+        <igc:SolidColorBrush Color="Yellow" />
+        <igc:SolidColorBrush Color="Green" />
+        <igc:SolidColorBrush Color="Lime" />
+        <igc:SolidColorBrush Color="Aqua" />
+        <igc:SolidColorBrush Color="Blue" />
+        <igc:SolidColorBrush Color="Purple" />
+        <igc:SolidColorBrush Color="Fuchsia" />
+      </igc:BrushCollection>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ScrollView>
+    <Grid BackgroundColor="White" HorizontalOptions="FillAndExpand" 
+          Padding="20,0,20,0"
+          RowSpacing="0" 
+          ColumnSpacing="0"
+          VerticalOptions="FillAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="0.5*"/>
+        <RowDefinition Height="0.5*"/>
+      </Grid.RowDefinitions>
+      
+        <ig:XFPieChart x:Name="PieChart"  Grid.Row="0"
+                       Brushes="{StaticResource SliceBrushes}"
+                       Outlines="{StaticResource SliceOutlines}"
+                       FontFamily="{x:Static local:Theme.FontFamilyUltraLight}"
+                       FontSize="{x:Static local:Theme.FontSizeMicro}"
+                       FontBrush="Green"
+                       HeightRequest="250" 
+                       InnerExtent="0" 
+                       RadiusFactor="0.7"
+                       ExplodedRadius="0.3"
+                       IsSurfaceInteractionDisabled="False"
+                       AllowSliceSelection="True" StartAngle="150"
+                       AllowSliceExplosion="True"
+                       ItemsSource="{Binding Data}"
+                       LabelMemberPath="DateFormatted"
+                       ValueMemberPath="Value"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="FillAndExpand"
+                       OthersCategoryThreshold="0"
+                       LabelsPosition="OutsideEnd"
+                       LeaderLineType="Arc"
+                       LeaderLineVisibility="Visible"/>
+
+        <ig:XFDataChart x:Name="DataChart" Grid.Row="1" 
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                      HorizontalZoomable="True" VerticalZoomable="True">
+          <ig:XFDataChart.Axes>
+            <ig:NumericYAxis x:Name="yAxis"  
+                             LabelFontFamily="{x:Static local:Theme.FontFamilyUltraLight}"
+                              LabelFontSize="{x:Static local:Theme.FontSizeMicro}"
+                               />
+            <ig:CategoryXAxis x:Name="xAxis" 
+                              LabelFontFamily="{x:Static local:Theme.FontFamilyUltraLight}"
+                              LabelFontSize="{x:Static local:Theme.FontSizeMicro}"
+                              ItemsSource="{Binding Data}" Label="Date:MM:dd"  />
+          </ig:XFDataChart.Axes>
+          <ig:XFDataChart.Series>
+
+            <ig:LineSeries ItemsSource="{Binding Data}" Title="Series Title"
+                              XAxis="{x:Reference xAxis}"
+                              YAxis="{x:Reference yAxis}"
+                              ValueMemberPath="Value"  />
+          </ig:XFDataChart.Series>
+        </ig:XFDataChart>
+      
+      </Grid>
+  </ScrollView>
+</ContentPage>

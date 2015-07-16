@@ -1,37 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json.Schema;
+﻿ 
 
 namespace WorldData
 {
     public class DataItem : ObservableObject
     {
-        private string label;
+        private string _label;
 
         public string Label
         {
-            get { return label; }
-            set { label = value; RaisePropertyChanged(); }
+            get { return _label; }
+            set { _label = value; RaisePropertyChanged(); }
         }
 
-        private double value;
+        private double _value;
 
         public double Value
         {
-            get { return value; }
-            set { value = value; RaisePropertyChanged(); }
+            get { return _value; }
+            set { _value = value; RaisePropertyChanged(); }
         }
 
-        private double level;
+        private double _level;
 
         public double Level
         {
-            get { return level; }
-            set { level = value; }
+            get { return _level; }
+            set { _level = value; RaisePropertyChanged(); }
         }
         
 

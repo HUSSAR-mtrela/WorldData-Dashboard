@@ -62,39 +62,38 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Xamarin.Forms.1.4.2.6359\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
     </Reference>
-    <Reference Include="InfragisticsAndroidBindings, Version=15.1.20151.102, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsAndroidBindings.dll</HintPath>
+    <Reference Include="InfragisticsAndroidBindings">
+      <HintPath>..\..\..\..\references\InfragisticsAndroidBindings.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Android">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Android.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Android.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Barcodes">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Barcodes.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Barcodes.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Barcodes.Android">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Barcodes.Android.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Barcodes.Android.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Charts">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Charts.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Charts.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Charts.Android">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Charts.Android.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Charts.Android.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Gauges">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Gauges.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Gauges.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Gauges.Android">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Gauges.Android.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Gauges.Android.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Grids">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Grids.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Grids.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Grids.Android">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Grids.Android.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Grids.Android.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />

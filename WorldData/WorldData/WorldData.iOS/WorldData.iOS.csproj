@@ -126,40 +126,40 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="IG.Unified">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\IG.Unified.dll</HintPath>
+      <HintPath>..\..\..\..\references\IG.Unified.dll</HintPath>
     </Reference>
     <Reference Include="IGChart.Unified">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\IGChart.Unified.dll</HintPath>
+      <HintPath>..\..\..\..\references\IGChart.Unified.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Barcodes">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Barcodes.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Barcodes.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Barcodes.iOS">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Barcodes.iOS.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Barcodes.iOS.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Charts">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Charts.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Charts.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Charts.iOS">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Charts.iOS.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Charts.iOS.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Gauges">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Gauges.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Gauges.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Gauges.iOS">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Gauges.iOS.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Gauges.iOS.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Grids">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Grids.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Grids.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Grids.iOS">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Grids.iOS.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Grids.iOS.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.iOS">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.iOS.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.iOS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Net.Http.Extensions">

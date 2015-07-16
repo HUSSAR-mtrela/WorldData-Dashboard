@@ -24,6 +24,14 @@ namespace WorldData.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             Infragistics.XF.Initializers.Charts.Init();
+
+            // ensure Infragistics assemblies are deployed 
+            Infragistics.XF.Initializers.Barcodes.Init();
+            Infragistics.XF.Initializers.Charts.Init();
+            Infragistics.XF.Initializers.Gauges.Init();
+            Infragistics.XF.Initializers.Grids.Init();
+
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

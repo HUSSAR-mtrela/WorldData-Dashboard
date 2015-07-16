@@ -38,6 +38,11 @@
     <Compile Include="Converters\BoolToColorConverter.cs" />
     <Compile Include="CustomControls\Options.cs" />
     <Compile Include="Data.cs" />
+    <Compile Include="Extensions\ColorEx.cs" />
+    <Compile Include="Extensions\ChartsEx.cs" />
+    <Compile Include="Extensions\DoubleEx.cs" />
+    <Compile Include="Extensions\Paints.cs" />
+    <Compile Include="Extensions\StringEx.cs" />
     <Compile Include="HelperExtensions.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="ObservableObject.cs" />
@@ -60,25 +65,28 @@
     <Compile Include="Views\CountryInfoPage.xaml.cs">
       <DependentUpon>CountryInfoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\TestPage.xaml.cs">
+      <DependentUpon>TestPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="InfragisticsXF">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Barcodes">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Barcodes.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Barcodes.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Charts">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Charts.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Charts.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Gauges">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Gauges.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Gauges.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsXF.Controls.Grids">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2015.1\Xamarin Forms\References\InfragisticsXF.Controls.Grids.dll</HintPath>
+      <HintPath>..\..\..\..\references\InfragisticsXF.Controls.Grids.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll</HintPath>
@@ -126,6 +134,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\CountryDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TestPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
